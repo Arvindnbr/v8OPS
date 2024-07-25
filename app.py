@@ -1,8 +1,5 @@
-from v8OPS.logger import logging
-from v8OPS.exception import AppException
-import sys
+from v8OPS.pipeline.training_pipeline import TrainingPipeline
 
-try:
-    print(12/"a")
-except Exception as a:
-    raise AppException(a, sys)
+
+obj = TrainingPipeline()
+obj.run_pipeline()
